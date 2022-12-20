@@ -1,0 +1,99 @@
+@import '../../base.scss';
+
+    .main {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $white;
+        background-image: url(../../image/InitialPage/img_1.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        overflow: hidden;
+    }
+
+
+.box{
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(0, 0, 0, .2);
+}
+
+.container{
+    box-sizing: border-box;
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    max-width: 800px;
+    font-size: 82px;
+    line-height: 1.2;
+    font-weight: 700;
+    margin: 0;
+    position: relative;
+}
+
+.line{
+    background: $red;
+    height: 3px;
+    width: 50px;
+    margin: 20px 0 15px; 
+}
+
+.text{
+    font-size: 28px;
+    line-height: 1.4;
+    font-weight: 400;
+    text-align: center;
+    opacity: .7;
+    margin: 0
+}
+
+
+.button{
+    @include button;
+}
+
+@media(max-width: 768px){
+    .box{
+        padding:  0 10px;
+    }
+
+    .container{
+        max-width: 500px;
+    }
+
+    .line{
+        width: 40px;
+    }
+    
+    .text{
+        font-size: 17px;
+    }
+}
+
+@media(max-width: 425px){
+    .container{
+        max-width: 350px;
+    }
+
+    .title{
+        font-size: 48px;
+    }
+    
+    .line{
+        width: 30px;
+    }
+}
+

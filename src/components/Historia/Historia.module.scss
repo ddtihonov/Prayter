@@ -1,0 +1,66 @@
+@import '../../base.scss';
+
+.main{
+    @include main-column;
+    background-image: url(../../image/Historia/img_1.jpg);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: cover;
+    padding: 0;
+}
+
+.box{
+    box-sizing: border-box;
+    max-width: 1400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 100px 20px 60px;
+}
+
+.container{
+    @include box-column;
+    box-sizing: border-box;
+    max-width: 600px;
+    width: 100%;
+}
+
+.title{
+    @include title;
+}
+
+.subtitle{
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 28px;
+    text-align: center;
+    color: $text-box;
+    margin: 0;
+}
+
+.line{
+    background: $background;
+        height: 2px;
+        width: 33px;
+        margin: 15px 0; 
+}
+
+.text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    color: $text-box;
+    text-align: center;
+    margin: 15px 0 0;
+}
+
+.button{
+    @include button;
+}
+
+@media(max-width: 768px){
+    .box{
+        padding:  0 10px;
+    }
+}
