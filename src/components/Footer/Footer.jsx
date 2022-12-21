@@ -9,8 +9,8 @@ export const Footer = () => {
             <div className={styles.container}>
                 <div className={styles.box}>
                     <img className={styles.logo} src={logo} alt = 'логотип'/>
-                    <a className={styles.link_mail} href="tel:+ 7 (925) 889-85-45" target='_blank' rel='noopener noreferrer'>+7 (985) 830-73-22</a>
-                    <a className={styles.link_mail} href="mailto:ddtihonov@yandex.ru" target='_blank' rel='noopener noreferrer'>Natalia.Gadzhieva@gmail.com</a>
+                    <a className={styles.link_mail} href="tel:+ 7 (985) 830-73-22" target='_blank' rel='noopener noreferrer'>+7 (985) 830-73-22</a>
+                    <a className={styles.link_mail} href="mailto:Natalia.Gadzhieva@gmail.com" target='_blank' rel='noopener noreferrer'>Natalia.Gadzhieva@gmail.com</a>
                 </div>
                 <ul className={styles.list}>
                     <li className={styles.item}>

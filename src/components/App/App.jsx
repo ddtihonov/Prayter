@@ -1,9 +1,14 @@
 import React, {useCallback, useState} from 'react'
+import { Route, Routes } from 'react-router-dom'
 import app from './App.module.scss'
 import {Main} from '../../pages/Main/Main'
 import { Header } from '../Header/Header'
 import { Footer } from '../Footer/Footer'
 import { UpButton } from '../UpButton/UpButton'
+import { Contacts } from '../../pages/Contacts/Contacts'
+import { AboutUs } from '../../pages/AboutUs/AboutUs'
+import { Pup } from '../Pup/Pup'
+import { Dogs } from '../Dogs/Dogs'
 
 
 function App() {
@@ -53,10 +58,39 @@ function App() {
       <Header
         isOpen={handleOpenMenuMobile}
       />
-      <Main
-        isOpen={handleFormOpen}
-        isImageOpen={handleImageOpen}
-      />
+      <Routes> 
+        <Route  path='/'  element={
+          <Main
+            isOpen={handleFormOpen}
+            isImageOpen={handleImageOpen}
+          />
+        }/>
+        
+        <Route  path='/kontakty'  element={
+          <Contacts
+            isOpen={handleFormOpen}
+            popupOpen={handleOpen}
+          />
+        }/>
+        <Route  path='/istoriya'  element={
+          <AboutUs
+            isOpen={handleFormOpen}
+            popupOpen={handleOpen}
+          />
+        }/>
+        <Route  path='/shchenki'  element={
+          <Pup
+            isOpen={handleFormOpen}
+            popupOpen={handleOpen}
+          />
+        }/>
+        <Route  path='/proizvoditeli'  element={
+          <Dogs
+            isOpen={handleFormOpen}
+            popupOpen={handleOpen}
+          />
+        }/>
+      </Routes>
       <Footer/>
       <UpButton/>
     </div>

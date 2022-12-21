@@ -1,0 +1,133 @@
+@import '../../base.scss';
+
+.main{
+    @include main-pages;
+}
+
+.container{
+    max-width: 1440px;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.box{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.title{
+    @include title-left;
+    margin: 0;
+}
+
+.text{
+    @include text;
+    margin: 20px 0 0;
+}
+
+.box_image{
+    box-sizing: border-box;
+    width: 50%;
+    margin-left: 10px;
+    overflow: hidden;
+}
+
+.image{
+    width: 100%;
+}
+
+.box_data{
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 100%;
+    padding: 50px 20px;
+}
+
+.link_data{
+    width: 100%;
+    text-align: left;
+    font-size: 20px;
+    line-height: 1.25;
+    font-weight: 700;
+    margin:  0;
+    color: $white;
+    text-decoration: none;
+    &:hover{
+        color: $red;
+        transition: .3s;
+    }
+}
+
+.list{
+    max-width: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.item{
+    box-sizing: content-box;
+}
+
+.link{
+    width: 35px;
+    height: 35px;
+    box-sizing: content-box;
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image_icon{
+    width: 30px;
+    height: 30px;
+    &:hover {
+        width: 35px;
+        height: 35px; 
+        cursor: pointer;
+        filter: drop-shadow(0 0 5px $white);
+        transition: all .3s ease-out;
+    }
+}
+
+@media(max-width: 768px){
+    .container{
+        flex-direction: column;
+        padding: 0 10px;
+    }
+
+    .box_data{
+        flex-direction: column;
+        padding: 0 10px;
+    }
+
+    .box{
+        width: 100%;
+        align-items: center;
+    }
+
+    .box_image{
+        width: 70%;
+        margin: 10px 0 0;
+    }
+
+}
+
+@media(max-width: 768px){
+
+    .box_image{
+        width: 100%;
+    }
+
+}

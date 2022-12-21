@@ -31,6 +31,7 @@
 }
 
 .nav{
+    margin-left: 50px;
     max-width: 700px;
     width: 100%;
     display: flex;
@@ -42,6 +43,7 @@
     color: $white;
     font-size: 16px;
     line-height: 19px;
+    font-weight: 600;
     text-decoration: none;
     position: relative;
     transition: all .3s ease-out;
@@ -79,7 +81,7 @@
     }
 
     .logo{
-        width: 90px;
+        width: 120px;
     }
 
     .nav{

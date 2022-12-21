@@ -2,25 +2,23 @@ $white: #FFF;
 $red:#CD2122; 
 $black: #000000;
 $dark-grey: #292e32;
-$title-black: #363431;
+$title: #202b30;
 $background-header:rgba(37, 37, 37,.5);
-
-
+$text-grey: #838383;
 $text: #d4d4d4;
 $text-box: #898989;
-$text-gray: #8d8d8d;
-$title: #333;
-$background: linear-gradient(to right,#f6c478 0,#dea43e 100%);
+$background-input: #353a3f;
+
 
 
 @mixin main-column {
     box-sizing: border-box;
-    background-color: white;
+    background-color: $dark-grey;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: $title-black;
+    color: $title;
     padding: 100px 20px;
     overflow: hidden;
 
@@ -30,6 +28,30 @@ $background: linear-gradient(to right,#f6c478 0,#dea43e 100%);
 
     @media(max-width: 425px){
         padding: 30px 10px;
+    }
+}
+
+@mixin main-pages {
+    box-sizing: border-box;
+    background-color: $dark-grey;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $white;
+    padding: 100px 0 0;
+}
+
+@mixin container-row {
+    max-width: 1440px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-start;
+    padding: 0 20px;
+
+    @media(max-width: 768px){
+        padding: 0 10px;
     }
 }
 
@@ -44,17 +66,49 @@ $background: linear-gradient(to right,#f6c478 0,#dea43e 100%);
 }
 
 @mixin title {
-    font-family:'Lovelace';
-    font-weight: 400;
-    font-size: 38px;
-    line-height: 1.2;
-    text-align: center;
     color: $title;
-    margin: 0;
+    font-size: 52px;
+    line-height: 1.25;
+    font-weight: 700;
+    margin: 0 0 10px;
+    text-align: center;
+
+    & span {
+        color: $red;
+    }
+
+    @media(max-width: 1000px){
+        max-width: 730px;
+        font-size: 40px;
+    }
+
+    @media(max-width: 600px){
+        max-width: 350px;
+        font-size: 25px;
+    } 
+    
+}
+
+@mixin title-left {
+    width: 100%;
+    color: $white;
+    text-align: left;
+    font-size: 40px;
+    line-height: 1.25;
+    font-weight: 700;
+    margin: 20px 0 0;
+
+    & span {
+        color: $red;
+    }
+
+    @media(max-width: 768px){
+        font-size: 36px;
+    }
 
     @media(max-width: 425px){
-            font-size: 36px;
-        }
+        font-size: 25px;
+    }
 }
 
 @mixin text {
