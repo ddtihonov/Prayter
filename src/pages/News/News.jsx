@@ -1,7 +1,8 @@
 import React, {useEffect } from 'react'
 import { motion } from "framer-motion"
-import styles from './Dogs.module.scss'
-import image from '../../image/AboutUs/image.png'
+import styles from './News.module.scss'
+import image from '../../image/Contacts/image_46.png'
+import { BreadCrumbs } from '../../components/BreadCrumbs/BreadCrumbs'
 
 const titleAnimation = {
     hidden: {
@@ -42,7 +43,7 @@ const imageAnimation = {
     }
 }
 
-export const Dogs = ({isOpen, popupOpen}) => {
+export const News = () => {
 
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -55,10 +56,13 @@ export const Dogs = ({isOpen, popupOpen}) => {
             whileInView='visible'
             viewport={{amount: 0.4, once: true}} 
             >
+            <BreadCrumbs
+                text={'Новости'}
+            />    
             <div className={styles.container}>
                 <div className={styles.box}>
-                    <motion.h1 className={styles.title} variants={titleAnimation}>Наши<span> производители</span></motion.h1>
-                    <motion.p className={styles.text} variants={subtitleAnimation}>К производителям в нашем питомнике мы относимся крайне серьёзно.</motion.p>
+                    <motion.h1 className={styles.title} variants={titleAnimation}>Наши <span>новости</span></motion.h1>
+                    <motion.p className={styles.text} variants={subtitleAnimation}>Обращайтесь в ПИТ ПРАЙТ Москва с любыми вопросами, касающимися условий содержания, ухода, особенностей питания, здоровья и мы с радостью Вас проконсультируем.</motion.p>
                 </div>
                 <div className={styles.box_image}>
                     <motion.img className={styles.image} src={image} alt='прайтеры' variants={imageAnimation}/>

@@ -26,8 +26,8 @@ export const Header = ({isOpen}) => {
                     <img className={header.logo} src={logo} alt = 'логотип'/>
                 </Link>
                 <nav className={header.nav}>
-                    <a className={header.link} href='/istoriya'>О нас</a>
-                    <Link className={header.link} to='/proizvoditeli'>Производители</Link>
+                    <Link className={header.link} to='/istoriya'>О нас</Link>
+                    <Link className={header.link} to='/proizvoditeli'>Наши собаки</Link>
                     <Link className={header.link} to='/shchenki'>Щенки</Link>
                     <Link className={header.link} to='/novosti'>Новости</Link>
                     <Link className={header.link} to='/kontakty'>Контакты</Link>

@@ -2,6 +2,7 @@ import React, {useEffect } from 'react'
 import { motion } from "framer-motion"
 import styles from './Contacts.module.scss'
 import image from '../../image/Contacts/image_46.png'
+import { BreadCrumbs } from '../../components/BreadCrumbs/BreadCrumbs'
 
 const titleAnimation = {
     hidden: {
@@ -55,6 +56,9 @@ export const Contacts = ({isOpen, popupOpen}) => {
             whileInView='visible'
             viewport={{amount: 0.4, once: true}} 
             >
+            <BreadCrumbs
+                text={'Контакты'}
+            />    
             <div className={styles.container}>
                 <div className={styles.box}>
                     <motion.h1 className={styles.title} variants={titleAnimation}>Наши <span>контакты</span></motion.h1>

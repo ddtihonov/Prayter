@@ -7,8 +7,9 @@ import { Footer } from '../Footer/Footer'
 import { UpButton } from '../UpButton/UpButton'
 import { Contacts } from '../../pages/Contacts/Contacts'
 import { AboutUs } from '../../pages/AboutUs/AboutUs'
-import { Pup } from '../Pup/Pup'
-import { Dogs } from '../Dogs/Dogs'
+import { Pup } from '../../pages/Pup/Pup'
+import { Dogs } from '../../pages/Dogs/Dogs'
+import { News } from '../../pages/News/News'
 
 
 function App() {
@@ -68,14 +69,14 @@ function App() {
         
         <Route  path='/kontakty'  element={
           <Contacts
-            isOpen={handleFormOpen}
-            popupOpen={handleOpen}
+          />
+        }/>
+        <Route  path='/novosti'  element={
+          <News
           />
         }/>
         <Route  path='/istoriya'  element={
           <AboutUs
-            isOpen={handleFormOpen}
-            popupOpen={handleOpen}
           />
         }/>
         <Route  path='/shchenki'  element={
@@ -86,8 +87,6 @@ function App() {
         }/>
         <Route  path='/proizvoditeli'  element={
           <Dogs
-            isOpen={handleFormOpen}
-            popupOpen={handleOpen}
           />
         }/>
       </Routes>

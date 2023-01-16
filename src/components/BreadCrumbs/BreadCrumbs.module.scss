@@ -1,0 +1,60 @@
+@import '../../base.scss';
+
+.main{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #333a3f;
+    margin-bottom: 20px;
+}
+
+.box{
+    max-width: 1400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu_link{
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 600;
+    text-decoration: none;
+    color: $text-grey;
+
+    :hover{
+        cursor: pointer;
+        transition: .3 ease;
+    }
+}
+
+.menu_text{
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 600;
+    color: $red;
+    margin: 0;
+
+    & span{
+        color: $text-grey;
+    }
+}
+
+@media (max-width: 768px){
+    .main{
+        padding: 10px;
+    }
+}
+
+@media(max-width: 425px){
+    .menu_link{
+        font-size: 14px;
+    }
+    
+    .menu_text{
+        font-size: 14px;
+    }
+}
