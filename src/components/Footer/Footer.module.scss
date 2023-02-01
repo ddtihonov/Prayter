@@ -2,7 +2,7 @@
 
 .main{
     @include main-column;
-    background-color: $dark-grey;
+    background: $dark-grey;
     padding: 50px 20px;
 }
 
@@ -35,7 +35,7 @@
 
 .link_mail{
     @include text;
-    margin: 0 0 15px;
+    margin: 15px 0 15px;
     text-decoration: none;
     color: $white;
     &:hover{

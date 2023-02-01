@@ -9,7 +9,7 @@ import { Contacts } from '../../pages/Contacts/Contacts'
 import { AboutUs } from '../../pages/AboutUs/AboutUs'
 import { Pup } from '../../pages/Pup/Pup'
 import { Dogs } from '../../pages/Dogs/Dogs'
-import { News } from '../../pages/News/News'
+import { MenuMobile } from '../MenuMobile/MenuMobile'
 
 
 function App() {
@@ -71,10 +71,6 @@ function App() {
           <Contacts
           />
         }/>
-        <Route  path='/novosti'  element={
-          <News
-          />
-        }/>
         <Route  path='/istoriya'  element={
           <AboutUs
           />
@@ -91,6 +87,9 @@ function App() {
         }/>
       </Routes>
       <Footer/>
+      {isMenuMobile && <MenuMobile
+        onClose={handleCloseMenuMobile}
+      />}
       <UpButton/>
     </div>
   );

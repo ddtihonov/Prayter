@@ -29,7 +29,6 @@ export const Header = ({isOpen}) => {
                     <Link className={header.link} to='/istoriya'>О нас</Link>
                     <Link className={header.link} to='/proizvoditeli'>Наши собаки</Link>
                     <Link className={header.link} to='/shchenki'>Щенки</Link>
-                    <Link className={header.link} to='/novosti'>Новости</Link>
                     <Link className={header.link} to='/kontakty'>Контакты</Link>
                 </nav>
                 <button className={header.button} type='button' onClick={isOpen} aria-label='открыть меню'/>

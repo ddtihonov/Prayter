@@ -28,6 +28,7 @@
 
 .subtitle{
     @include title-left;
+    color: $title;
     margin: 0;
 }
 

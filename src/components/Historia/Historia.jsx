@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './Historia.module.scss'
-import image from '../../image/Historia/image_2.png'
+import image from '../../image/AboutUs/image.png'
 
 
 export const Historia = ({isOpen}) => {

@@ -2,6 +2,7 @@ import React, {useEffect } from 'react'
 import { motion } from "framer-motion"
 import styles from './Pup.module.scss'
 import image from '../../image/AboutUs/image.png'
+import { BreadCrumbs } from '../../components/BreadCrumbs/BreadCrumbs'
 
 const titleAnimation = {
     hidden: {
@@ -55,6 +56,9 @@ export const Pup = ({isOpen, popupOpen}) => {
             whileInView='visible'
             viewport={{amount: 0.4, once: true}} 
             >
+            <BreadCrumbs
+                text={'Щенки'}
+            />        
             <div className={styles.container}>
                 <div className={styles.box}>
                     <motion.h1 className={styles.title} variants={titleAnimation}><span>ПИТ ПРАЙТ</span> Москва</motion.h1>

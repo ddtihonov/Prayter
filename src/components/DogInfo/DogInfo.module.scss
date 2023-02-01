@@ -1,0 +1,22 @@
+@import '../../base.scss';
+
+.container{
+    max-width: 50%;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.box_image{
+    box-sizing: border-box;
+    width: 40%;
+    margin-right: 10px;
+    overflow: hidden;
+}
+
+.image{
+    width: 100%;
+}

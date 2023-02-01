@@ -2,6 +2,7 @@ import React, {useEffect } from 'react'
 import { motion } from "framer-motion"
 import styles from './AboutUs.module.scss'
 import image from '../../image/AboutUs/image.png'
+import { BreadCrumbs } from '../../components/BreadCrumbs/BreadCrumbs'
 
 const titleAnimation = {
     hidden: {
@@ -55,6 +56,9 @@ export const AboutUs = ({isOpen, popupOpen}) => {
             whileInView='visible'
             viewport={{amount: 0.4, once: true}} 
             >
+            <BreadCrumbs
+                text={'Нащи собаки'}
+            />     
             <div className={styles.container}>
                 <div className={styles.box}>
                     <motion.h1 className={styles.title} variants={titleAnimation}><span>ПИТ ПРАЙТ</span> Москва</motion.h1>

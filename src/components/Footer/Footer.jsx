@@ -11,6 +11,7 @@ export const Footer = () => {
                     <img className={styles.logo} src={logo} alt = 'логотип'/>
                     <a className={styles.link_mail} href="tel:+ 7 (985) 830-73-22" target='_blank' rel='noopener noreferrer'>+7 (985) 830-73-22</a>
                     <a className={styles.link_mail} href="mailto:Natalia.Gadzhieva@gmail.com" target='_blank' rel='noopener noreferrer'>Natalia.Gadzhieva@gmail.com</a>
+                    <p className={styles.text}>Калужская область, Малоярославецкий район, деревня Шумятино, Варшавская улица, 7</p>
                 </div>
                 <ul className={styles.list}>
                     <li className={styles.item}>
