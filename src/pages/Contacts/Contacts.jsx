@@ -1,7 +1,7 @@
 import React, {useEffect } from 'react'
 import { motion } from "framer-motion"
 import styles from './Contacts.module.scss'
-import image from '../../image/Contacts/image_46.png'
+import image from '../../image/Contacts/image_9.png'
 import { BreadCrumbs } from '../../components/BreadCrumbs/BreadCrumbs'
 
 const titleAnimation = {

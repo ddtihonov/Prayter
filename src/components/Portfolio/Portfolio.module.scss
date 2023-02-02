@@ -24,5 +24,6 @@
 }
 
 .button{
-    @include button
+    @include button;
+    background-color: $red;
 }

@@ -1,7 +1,7 @@
 import React, {useEffect } from 'react'
 import { motion } from "framer-motion"
 import styles from './AboutUs.module.scss'
-import image from '../../image/AboutUs/image.png'
+import image from '../../image/AboutUs/image_46.png'
 import { BreadCrumbs } from '../../components/BreadCrumbs/BreadCrumbs'
 
 const titleAnimation = {
@@ -57,7 +57,7 @@ export const AboutUs = ({isOpen, popupOpen}) => {
             viewport={{amount: 0.4, once: true}} 
             >
             <BreadCrumbs
-                text={'Нащи собаки'}
+                text={'О нас'}
             />     
             <div className={styles.container}>
                 <div className={styles.box}>

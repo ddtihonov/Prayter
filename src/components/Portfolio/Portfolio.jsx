@@ -54,7 +54,7 @@ export const Portfolio = ({isImageOpen}) => {
                         }
                     })}
                 </ul>
-                {moviesTotal < arrPortfolio.length && <button  className={styles.button} onClick={addCards}>Ещё работы</button>}
+                {moviesTotal < arrPortfolio.length && <button  className={styles.button} onClick={addCards}>Ещё фото</button>}
             </div>
         </section>
     )
