@@ -1,0 +1,34 @@
+@import '../../base.scss';
+
+.main{
+    @include main-column;
+    padding: 20px;
+}
+
+.box{
+    @include box-column
+}
+
+.title{
+    @include title;
+
+    & span{
+        color: $red;
+    }
+}
+
+.list{
+    max-width: 1200px;
+    margin-top: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: 1fr;
+}
+
+.button{
+    @include button;
+    background-color: $red;
+}

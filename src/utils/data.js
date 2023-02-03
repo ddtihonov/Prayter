@@ -19,14 +19,31 @@ import image_18 from '../image/Portfolio/image_18.webp'
 import image_19 from '../image/Portfolio/image_19.webp'
 import image_20 from '../image/Portfolio/image_20.webp'
 import image_21 from '../image/Portfolio/image_21.webp'
-import image_22 from '../image/Portfolio/image_22.webp'
 import image_23 from '../image/Portfolio/image_23.webp'
 import image_24 from '../image/Portfolio/image_24.webp'
 import image_25 from '../image/Portfolio/image_25.webp'
 import image_26 from '../image/Portfolio/image_26.webp'
 import image_27 from '../image/Portfolio/image_27.webp'
+import image_28 from '../image/Portfolio/image_28.webp'
+import image_29 from '../image/Portfolio/image_29.webp'
+import image_30 from '../image/Portfolio/image_30.webp'
+import image_31 from '../image/Portfolio/image_31.webp'
+import image_32 from '../image/Portfolio/image_32.webp'
 
-export const arrPortfolio = [{image: image_1}, { image: image_2}, { image: image_3}, {image: image_4}, { image: image_5}, {image: image_6}, {image: image_7}, { image: image_8}, { image: image_9}, { image: image_12}, {image: image_13}, { image: image_14}, {image: image_16}, { image: image_17}, { image: image_18}, { image: image_19}, { image: image_27},];
+import video_1 from '../image/VideoClip/video.MP4'
+import video_2 from '../image/VideoClip/video_1.MP4'
+import video_3 from '../image/VideoClip/video_2.MP4'
+import video_4 from '../image/VideoClip/video_3.MP4'
+import video_5 from '../image/VideoClip/video_4.MP4'
+import video_6 from '../image/VideoClip/video_5.MP4'
+import video_7 from '../image/VideoClip/video_6.MP4'
+import video_8 from '../image/VideoClip/video_7.MP4'
+import video_9 from '../image/VideoClip/video_8.MP4'
+import video_10 from '../image/VideoClip/video_9.MP4'
+
+export const arrPortfolio = [{image: image_1}, { image: image_2}, { image: image_3}, {image: image_4}, { image: image_5}, {image: image_6}, {image: image_7}, { image: image_8}, { image: image_9}, { image: image_12}, {image: image_13}, { image: image_14}, {image: image_16}, { image: image_17}, { image: image_18}, { image: image_19}, { image: image_27}, { image: image_24}, { image: image_20}, { image: image_28}, { image: image_29}, { image: image_31}, { image: image_32},  { image: image_30},];
 
 export const arrChildren = [{image: image_10}, { image: image_11}, { image: image_15}, { image: image_21}, { image: image_23}, { image: image_25}, { image: image_26},];
+
+export const arrVideo =[{video: video_1}, {video: video_2}, {video: video_3}, {video: video_4}, {video: video_5}, {video: video_6}, {video: video_7}, {video: video_8}, {video: video_9}, {video: video_10},]
 

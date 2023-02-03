@@ -6,15 +6,14 @@
     align-items: center;
     justify-content: center;
     max-width: 600px;
+}
 
+.image{
+    width: 100%;
     &:hover{
         transition: all .3s;
         cursor: pointer;
         filter: contrast(60%);
         
     }
-}
-
-.image{
-    width: 100%;
 }
