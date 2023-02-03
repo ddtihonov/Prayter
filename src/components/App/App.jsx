@@ -9,14 +9,15 @@ import { Contacts } from '../../pages/Contacts/Contacts'
 import { AboutUs } from '../../pages/AboutUs/AboutUs'
 import { Pup } from '../../pages/Pup/Pup'
 import { Dogs } from '../../pages/Dogs/Dogs'
+import { Breed } from '../../pages/Breed/Breed'
 import { MenuMobile } from '../MenuMobile/MenuMobile'
+import { ModalImage } from '../ModalImage/ModalImage'
+
 
 
 function App() {
 
   const [isMenuMobile, setIsMenuMobile] = useState(false)
-  const [isPopupFormOpen, setIsPopupFormOpen] = useState(false)
-  const [isPopupOpen, setIsPopupOpen] = useState(false)
   const [isPopupImageOpen, setIsPopupImageOpen] = useState(false)
   const [isIndex, setIsIndex] = useState(null)
 
@@ -27,22 +28,6 @@ function App() {
 
   const handleOpenMenuMobile = useCallback(() => {
     setIsMenuMobile(true)
-  }, []);
-
-  const handleFormOpen = useCallback(() => {
-    setIsPopupFormOpen(true)
-  }, []);
-
-  const handleFormClose = useCallback(() => {
-    setIsPopupFormOpen(false)
-  }, []);
-
-  const handleOpen = useCallback(() => {
-    setIsPopupOpen(true)
-  }, []);
-
-  const handleClose = useCallback(() => {
-    setIsPopupOpen(false)
   }, []);
 
   const handleImageClose = useCallback(() => {
@@ -62,13 +47,15 @@ function App() {
       <Routes> 
         <Route  path='/'  element={
           <Main
-            isOpen={handleFormOpen}
-            isImageOpen={handleImageOpen}
           />
         }/>
         
         <Route  path='/kontakty'  element={
           <Contacts
+          />
+        }/>
+        <Route  path='/poroda'  element={
+          <Breed
           />
         }/>
         <Route  path='/istoriya'  element={
@@ -77,12 +64,11 @@ function App() {
         }/>
         <Route  path='/shchenki'  element={
           <Pup
-            isOpen={handleFormOpen}
-            popupOpen={handleOpen}
           />
         }/>
-        <Route  path='/proizvoditeli'  element={
+        <Route  path='/foto'  element={
           <Dogs
+            isImageOpen={handleImageOpen}
           />
         }/>
       </Routes>
@@ -90,6 +76,12 @@ function App() {
       {isMenuMobile && <MenuMobile
         onClose={handleCloseMenuMobile}
       />}
+      {isPopupImageOpen && 
+      <ModalImage
+        onClose={handleImageClose}
+        index={isIndex}
+      />}
+
       <UpButton/>
     </div>
   );

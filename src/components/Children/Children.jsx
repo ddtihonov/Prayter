@@ -1,12 +1,12 @@
 import React, {useState, useEffect, useCallback} from 'react'
-import styles from './Portfolio.module.scss'
-import { arrPortfolio } from '../../utils/data'
+import styles from './Children.module.scss'
+import { arrChildren } from '../../utils/data'
 import { v4 as uuidv4 } from 'uuid'
 import ScreenSize from '../../hooks/ScreenSize'
 import { CardImage } from '../CardImage/CardImage'
 
 
-export const Portfolio = ({isImageOpen}) => {
+export const Children = ({isImageOpen}) => {
 
     const width = ScreenSize()
     const [moviesTotal, setMoviesTotal] = useState(0)
@@ -36,9 +36,9 @@ export const Portfolio = ({isImageOpen}) => {
     return (
         <section className={styles.main} id='Portfolio'>
             <div className={styles.box}>
-                <h2 className={styles.title} >Галерея московских <span>прайтеров</span></h2>
+                <h2 className={styles.title} ><span>Прайтеры</span> и дети</h2>
                 <ul className={styles.list}>
-                    {arrPortfolio.map((item, index) =>{
+                    {arrChildren.map((item, index) =>{
                         const keyUid = uuidv4()
                         if (index + 1 <= moviesTotal) {
                             return(
@@ -54,7 +54,7 @@ export const Portfolio = ({isImageOpen}) => {
                         }
                     })}
                 </ul>
-                {moviesTotal < arrPortfolio.length && <button  className={styles.button} onClick={addCards}>Ещё фото</button>}
+                {moviesTotal <arrChildren.length && <button  className={styles.button} onClick={addCards}>Ещё фото</button>}
             </div>
         </section>
     )

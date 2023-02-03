@@ -1,7 +1,7 @@
 $white: #FFF;
 $red:#CD2122;
 $blue:  #0d4cd3;
-$dark-blue:  #143d8d;;
+$dark-blue:  #143d8d;
 $black: #000000;
 $dark-grey: #292e32;
 $title: #202b30;
@@ -11,13 +11,13 @@ $text: #d4d4d4;
 $text-box: #898989;
 $background-input: #353a3f;
 $background-grey: #F5F5F5;
-$background: linear-gradient(286.41deg, #c2c4c7 3.63%, $background-grey 90.98%);
+$grey: #E3E3E3;
 
 
 
 @mixin main-column {
     box-sizing: border-box;
-    background: $background;
+    background:  #E3E3E3;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -37,13 +37,17 @@ $background: linear-gradient(286.41deg, #c2c4c7 3.63%, $background-grey 90.98%);
 
 @mixin main-pages {
     box-sizing: border-box;
-    background-color: $dark-grey;
+    background-color: $grey;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: $white;
-    padding: 100px 0 0;
+    padding: 52.5px 0 0;
+
+    @media(max-width: 768px){
+        padding: 47.5px 0 0;
+    } 
 }
 
 @mixin container-row {
@@ -70,7 +74,7 @@ $background: linear-gradient(286.41deg, #c2c4c7 3.63%, $background-grey 90.98%);
 }
 
 @mixin title {
-    color: $title;
+    color: $dark-blue;
     font-size: 52px;
     line-height: 1.25;
     font-weight: 700;
@@ -86,16 +90,16 @@ $background: linear-gradient(286.41deg, #c2c4c7 3.63%, $background-grey 90.98%);
         font-size: 40px;
     }
 
-    @media(max-width: 600px){
+    @media(max-width: 500px){
         max-width: 350px;
-        font-size: 25px;
+        font-size: 26px;
     } 
     
 }
 
 @mixin title-left {
     width: 100%;
-    color: $white;
+    color: $dark-blue;
     text-align: left;
     font-size: 40px;
     line-height: 1.25;
@@ -121,7 +125,7 @@ $background: linear-gradient(286.41deg, #c2c4c7 3.63%, $background-grey 90.98%);
     font-weight: 400;
     margin: 20px 0;
     width: 100%;
-    color: $white;
+    color: $title;
     
     @media(max-width: 425px){
         font-size: 14px;

@@ -1,7 +1,8 @@
 import React from 'react'
 import styles from './Historia.module.scss'
-import image from '../../image/AboutUs/image_7.png'
-import image_1 from '../../image/AboutUs/image_8.png'
+import image from '../../image/Historia/image_6.png'
+import image_1 from '../../image/Historia/image_8.png'
+import image_2 from '../../image/Historia/image_9.png'
 
 
 export const Historia = ({isOpen}) => {
@@ -9,20 +10,31 @@ export const Historia = ({isOpen}) => {
         <section className={styles.main}>
             < div className={styles.box}>
                     <div className={styles.box_info}>
-                        <img className={styles.image} src={image} alt='прайтер'/>
+                        <img className={styles.image} src={image_1} alt='прайтер'/>
                         <div className={styles.box_text}>
                             <h3 className={styles.subtitle}><span>Прайтер </span>обзор породы</h3>
-                            <p className={styles.text}>Прайтер (питбуль прайтер, пит прайт) - авторская порода собак-компаньонов, в формировании которой принимали участие американские питбультертерьеры, американские стаффордширские терьеры, немецкие доги, канарские доги и веймаранеры.</p>
-                            <p className={styles.text}>Внешне это крупная собака ростом 53-62 см и весом 25-35 кг, продолжительностью жизни 12-15 лет.</p>
+                            <p className={styles.text}>&#8226; Подходит в качестве первой собаки</p>
+                            <p className={styles.text}>&#8226; Легко поддается дресировке</p>
+                            <p className={styles.text}>&#8226; Хорошо уживается с другими питомцами</p>
                         </div>
                     </div>
                     <div className={styles.box_info}>
                         <div className={styles.box_text}>
-                            <h3 className={styles.subtitle}><span>Прайтер </span>характер и поведение</h3>
-                            <p className={styles.text}>Прайтеры добродушны и очень ориентированы на человека, они лишены агрессии и легко управляются голосом. Этим собакам не свойственно проявлять доминантность или свои лидерские качества. Прайтеры отлично уживаются как с другими питомцами, так и с детьми.</p>
-                            <p className={styles.text}>Интеллект высокий, легко поддаются обучению и дрессировке. Темперамент активный, прайтер обожает движение, но может составить компанию владельцу и в спокойных занятиях.</p>
+                            <h3 className={styles.subtitle}><span>Прайтер </span></h3>
+                            <p className={styles.text}>&#8226; Короткошерстная собака среднего размера</p>
+                            <p className={styles.text}>&#8226; Комфортно чувствует себя в городских условиях</p>
+                            <p className={styles.text}>&#8226; Удобна для квартирного содержания</p>
                         </div>
-                        <img className={styles.image} src={image_1} alt='прайтер'/>
+                        <img className={styles.image} src={image} alt='прайтер'/>
+                    </div>
+                    <div className={styles.box_info}>
+                        <img className={styles.image} src={image_2} alt='прайтер'/>
+                        <div className={styles.box_text}>
+                            <h3 className={styles.subtitle}><span>Прайтер </span></h3>
+                            <p className={styles.text}>&#8226; Ориентирована на человека</p>
+                            <p className={styles.text}>&#8226; Хорошо относится ко всем членам семьи</p>
+                            <p className={styles.text}>&#8226;Можно заводить в семью где есть маленькие дети</p>
+                        </div>
                     </div>
             </div>
         </section>
