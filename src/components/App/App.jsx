@@ -7,12 +7,12 @@ import { Footer } from '../Footer/Footer'
 import { UpButton } from '../UpButton/UpButton'
 import { Contacts } from '../../pages/Contacts/Contacts'
 import { AboutUs } from '../../pages/AboutUs/AboutUs'
-import { Pup } from '../../pages/Pup/Pup'
 import { Dogs } from '../../pages/Dogs/Dogs'
 import { Breed } from '../../pages/Breed/Breed'
 import { MenuMobile } from '../MenuMobile/MenuMobile'
 import { ModalImage } from '../ModalImage/ModalImage'
-
+import { News } from '../../pages/News/News'
+import { Health } from '../../pages/Health/Health'
 
 
 function App() {
@@ -49,6 +49,10 @@ function App() {
           <Main
           />
         }/>
+        <Route  path='/novosti'  element={
+          <News
+          />
+        }/>
         
         <Route  path='/kontakty'  element={
           <Contacts
@@ -62,8 +66,8 @@ function App() {
           <AboutUs
           />
         }/>
-        <Route  path='/shchenki'  element={
-          <Pup
+      <Route  path='/zdorovie'  element={
+          <Health
           />
         }/>
         <Route  path='/foto'  element={

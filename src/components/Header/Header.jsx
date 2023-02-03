@@ -28,10 +28,11 @@ export const Header = ({isOpen}) => {
                     <img className={header.logo} src={logo} alt = 'логотип'/>
                 </Link>
                 <nav className={header.nav}>
-                    <Link className={header.link} to='/poroda'>О Породе</Link>
                     <Link className={header.link} to='/istoriya'>О нас</Link>
+                    <Link className={header.link} to='/novosti'>Новости</Link>
+                    <Link className={header.link} to='/poroda'>О Породе</Link>
                     <Link className={header.link} to='/foto'>Фото и видео</Link>
-                    <Link className={header.link} to='/shchenki'>Щенки</Link>
+                    <Link className={header.link} to='/zdorovie'>Здоровье</Link>
                     <Link className={header.link} to='/kontakty'>Контакты</Link>
                 </nav>
                 <button className={header.button} type='button' onClick={isOpen} aria-label='открыть меню'/>
