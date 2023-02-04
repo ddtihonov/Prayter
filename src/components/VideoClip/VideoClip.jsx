@@ -3,7 +3,6 @@ import styles from './VideoClip.module.scss'
 import { arrVideo } from '../../utils/data'
 import { v4 as uuidv4 } from 'uuid'
 import ScreenSize from '../../hooks/ScreenSize'
-import video from '../../image/VideoClip/video.MP4'
 import { CardVideo } from '../CardVideo/CardVideo'
 
 

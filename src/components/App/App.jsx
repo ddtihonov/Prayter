@@ -13,6 +13,7 @@ import { MenuMobile } from '../MenuMobile/MenuMobile'
 import { ModalImage } from '../ModalImage/ModalImage'
 import { News } from '../../pages/News/News'
 import { Health } from '../../pages/Health/Health'
+import { arrBoy } from '../../utils/data'
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
   const [isMenuMobile, setIsMenuMobile] = useState(false)
   const [isPopupImageOpen, setIsPopupImageOpen] = useState(false)
   const [isIndex, setIsIndex] = useState(null)
+  const [isArr, setIsArr] = useState(arrBoy)
 
 
   const handleCloseMenuMobile = useCallback(() => {
@@ -34,8 +36,9 @@ function App() {
     setIsPopupImageOpen(false)
   }, []);
 
-  const handleImageOpen = useCallback((index) => {
+  const handleImageOpen = useCallback((index, arrPortfolio) => {
       setIsIndex(index)
+      setIsArr(arrPortfolio)
       setIsPopupImageOpen(true)
   }, [])
 
@@ -84,6 +87,7 @@ function App() {
       <ModalImage
         onClose={handleImageClose}
         index={isIndex}
+        arr={isArr}
       />}
 
       <UpButton/>

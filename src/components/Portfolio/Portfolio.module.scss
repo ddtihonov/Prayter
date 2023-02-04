@@ -6,7 +6,7 @@
 }
 
 .box{
-    @include box-column
+    @include box-column;
 }
 
 .title{
@@ -19,13 +19,105 @@
 
 .list{
     max-width: 1200px;
-    margin-top: 20px;
     width: 100%;
     box-sizing: border-box;
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-rows: 1fr;
+}
+
+.list_girl{
+    max-width: 1200px;
+    width: 100%;
+    box-sizing: border-box;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: 1fr;
+    border: 2px solid $red;
+}
+
+.box_buttom{
+    max-width: 1200px;
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button_boy{
+    width: 50%;
+    background-color: $dark-blue;
+    color: $white;
+    border: 2px solid $dark-blue;
+    border-bottom: none;
+    padding: 20px 0;
+    font-size: 19px;
+    line-height: 23px;
+    font-weight: 600;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.button_boys{
+    width: 50%;
+    background-color: transparent;
+    color:  $dark-blue;
+    border: 2px solid $dark-blue;
+    border-bottom: none;
+    border-right: none;
+    padding: 20px 0;
+    font-size: 19px;
+    line-height: 23px;
+    font-weight: 600;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    &:hover{
+        cursor: pointer;
+        background-color: $dark-blue;
+        color: $white;
+        transition: all .3;
+    }
+}
+
+.button_girl{
+    width: 50%;
+    background-color: $red;
+    color: $white;
+    border: 2px solid $red;
+    border-bottom: none;
+    border-left: none;
+    padding: 20px 0;
+    font-size: 19px;
+    line-height: 23px;
+    font-weight: 600;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.button_girls{
+    width: 50%;
+    background-color: transparent;
+    color: $red;
+    border: 2px solid $red;
+    border-bottom: none;
+    border-left: none;
+    padding: 20px 0;
+    font-size: 19px;
+    line-height: 23px;
+    font-weight: 600;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    &:hover{
+        cursor: pointer;
+        background-color: $red;
+        color: $white;
+        transition: all .3;
+}
 }
 
 .button{

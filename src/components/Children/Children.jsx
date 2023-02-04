@@ -40,13 +40,15 @@ export const Children = ({isImageOpen}) => {
                 <ul className={styles.list}>
                     {arrChildren.map((item, index) =>{
                         const keyUid = uuidv4()
+                        let arrPortfolio = arrChildren
                         if (index + 1 <= moviesTotal) {
                             return(
                                 <CardImage
                                     key={keyUid}
                                     item={item}
                                     index={index}
-                                    isImageOpen={isImageOpen} 
+                                    isImageOpen={isImageOpen}
+                                    arrPortfolio={arrPortfolio} 
                                 />
                             ) 
                         }else {

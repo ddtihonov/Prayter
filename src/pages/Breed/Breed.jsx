@@ -14,7 +14,7 @@ export const Breed = () => {
                 text={'О породе'}
             />
             <div className={styles.container}>
-                <h2 className={styles.title} >Стандарты породы <span>прайтер</span></h2>
+                <h2 className={styles.title} >Стандарт породы <span>прайтер</span></h2>
                 <h4 className={styles.subtitle}>Общий вид</h4>
                 <p className={styles.text}>Прайтер - чуть выше и массивнее среднего размера - производит впечатление крепкой, сильной, мышечной, атлетически и гармонично сложенной собаки. Вся его стать говорит о том, что он создан для спорта и активного времяпрепровождения. Темпераментный, активный, азартный прайтер легко управляемый и очень ориентирован на подчинение человеку, никогда не доминирует и не пытается быть лидером в семье.</p>
                 <h4 className={styles.subtitle}>Голова</h4>
@@ -61,8 +61,6 @@ export const Breed = () => {
                 <p className={styles.text}>Расположено вертикально, длинное, сухое и мускулистое.</p>
                 <h4 className={styles.subtitle}>Запястье</h4>
                 <p className={styles.text}>Крепкое, четко обозначенное, но не излишне увеличенное.</p>
-                <h4 className={styles.subtitle}>Пясти</h4>
-                <p className={styles.text}>Прямые, отвесные, крепкие.</p>
                 <h4 className={styles.subtitle}>Пясти</h4>
                 <p className={styles.text}>Прямые, отвесные, крепкие.</p>
                 <h4 className={styles.subtitle}>Передние лапы</h4>

@@ -30,20 +30,15 @@ import image_30 from '../image/Portfolio/image_30.webp'
 import image_31 from '../image/Portfolio/image_31.webp'
 import image_32 from '../image/Portfolio/image_32.webp'
 
-import video_1 from '../image/VideoClip/video.MP4'
-import video_2 from '../image/VideoClip/video_1.MP4'
-import video_3 from '../image/VideoClip/video_2.MP4'
-import video_4 from '../image/VideoClip/video_3.MP4'
-import video_5 from '../image/VideoClip/video_4.MP4'
-import video_6 from '../image/VideoClip/video_5.MP4'
-import video_7 from '../image/VideoClip/video_6.MP4'
-import video_8 from '../image/VideoClip/video_7.MP4'
-import video_9 from '../image/VideoClip/video_8.MP4'
-import video_10 from '../image/VideoClip/video_9.MP4'
 
-export const arrPortfolio = [{image: image_1}, { image: image_2}, { image: image_3}, {image: image_4}, { image: image_5}, {image: image_6}, {image: image_7}, { image: image_8}, { image: image_9}, { image: image_12}, {image: image_13}, { image: image_14}, {image: image_16}, { image: image_17}, { image: image_18}, { image: image_19}, { image: image_27}, { image: image_24}, { image: image_20}, { image: image_28}, { image: image_29}, { image: image_31}, { image: image_32},  { image: image_30},];
+//export const arrPortfolio = [{image: image_1, gender: 'lady'}, { image: image_2, gender: 'man'}, { image: image_3, gender: 'lady'}, {image: image_4, gender: 'lady'}, { image: image_5, gender: 'man'}, {image: image_6, gender: 'lady'}, {image: image_7, gender: 'man'}, { image: image_8, gender: 'man'}, { image: image_9, gender: 'lady'}, { image: image_12, gender: 'man'}, {image: image_13, gender: 'lady'}, { image: image_14, gender: 'lady'}, {image: image_16, gender: 'man'}, { image: image_17, gender: 'man'}, { image: image_18, gender: 'man'}, { image: image_19, gender: 'lady'}, { image: image_27, gender: 'lady'}, { image: image_24, gender: 'man'}, { image: image_20, gender: 'man'}, { image: image_28, gender: 'lady'}, { image: image_29, gender: 'lady'}, { image: image_31, gender: 'man'}, { image: image_32, gender: 'lady'},  { image: image_30, gender: 'man'},];
+
+
+export const arrBoy = [{ image: image_2, gender: 'man'}, { image: image_5, gender: 'man'}, {image: image_7, gender: 'man'}, { image: image_8, gender: 'man'}, { image: image_12, gender: 'man'}, {image: image_16, gender: 'man'}, { image: image_17, gender: 'man'}, { image: image_18, gender: 'man'}, { image: image_24, gender: 'man'}, { image: image_20, gender: 'man'}, { image: image_31, gender: 'man'}, { image: image_30, gender: 'man'},];
+
+export const arrGirls = [{image: image_1, gender: 'lady'}, { image: image_3, gender: 'lady'}, {image: image_4, gender: 'lady'}, {image: image_6, gender: 'lady'}, { image: image_9, gender: 'lady'}, {image: image_13, gender: 'lady'}, { image: image_14, gender: 'lady'}, { image: image_19, gender: 'lady'}, { image: image_27, gender: 'lady'},{ image: image_28, gender: 'lady'}, { image: image_29, gender: 'lady'}, { image: image_31, gender: 'man'}, { image: image_32, gender: 'lady'},];
 
 export const arrChildren = [{image: image_10}, { image: image_11}, { image: image_15}, { image: image_21}, { image: image_23}, { image: image_25}, { image: image_26},];
 
-export const arrVideo =[{video: video_1}, {video: video_2}, {video: video_3}, {video: video_4}, {video: video_5}, {video: video_6}, {video: video_7}, {video: video_8}, {video: video_9}, {video: video_10},]
+export const arrVideo =[{video: 'https://youtu.be/j8RwfJDMdAQ'}, {video: 'https://youtu.be/UzibYaHLlQI'}, {video: 'https://youtu.be/Evq1fplqgpA'}, {video: 'https://youtu.be/2dTGBQsxYr8'},  {video: 'https://youtu.be/dZttWpzisqY'}, {video: 'https://youtu.be/L3k3cnEWzA8'}, {video: 'https://youtu.be/BSJxnbco4Y8'},]
 
