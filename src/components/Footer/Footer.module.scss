@@ -29,11 +29,25 @@
     margin-bottom: 10px
 }
 
+.link_developer{
+    text-decoration: none;
+    color: $white;
+    & :hover{
+        opacity: .5;
+        transition: .3s;
+    }
+    & span{
+        color: $red;
+        font-weight: 700;
+    }
+}
+
 .text{
     @include text;
     color: $white;
     margin: 0 0 10px;
 }
+
 
 .link_mail{
     @include text;

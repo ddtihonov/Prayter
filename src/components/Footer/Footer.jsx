@@ -42,6 +42,9 @@ export const Footer = () => {
                 <div className={styles.box}>
                     <p className={styles.text}>Информация на сайте, не является публичной офертой. Копирование материалов сайта запрещено.</p>
                     <p className={styles.text}>&#169; 2023 Все права защищены.</p>
+                    <a className={styles.link_developer} target='_blank' rel='noopener noreferrer' href='https://tihonov-studio.ru/' aria-label='сайт тихонова дмитрия'>
+                        <p className={styles.text}>Разработано<span> TD</span></p>
+                    </a>
                 </div>
             </div>
         </footer>

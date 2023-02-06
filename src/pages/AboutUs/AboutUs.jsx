@@ -17,19 +17,6 @@ const titleAnimation = {
     }
 }
 
-const subtitleAnimation = {
-    hidden: {
-        x: -500,
-        opacity: 0,
-    },
-
-    visible: {
-        x: 0,
-        opacity: 1,
-        transition: { duration: 1 }
-    }
-}
-
 const imageAnimation = {
     hidden: {
         y: 500,
@@ -62,7 +49,21 @@ export const AboutUs = ({isOpen, popupOpen}) => {
             <div className={styles.container}>
                 <div className={styles.box}>
                     <motion.h1 className={styles.title} variants={titleAnimation}><span>ПИТ ПРАЙТ</span> Москва</motion.h1>
-                    <motion.p className={styles.text} variants={subtitleAnimation}>Наш питомник занимается разведением Прайтеров уже более 25 лет путём жёсткого селекционного отбора. Цель питомника сделать универсальную, многофункциональную,хорошо управляемую, спортивную собаку с крепкой нервной системой и безграничной любовью к человеку. Прайтер-это собака компаньон и терпеливая, нежная и заботливая нянька для ваших детей. Собаки нашего питомника уже не имеют отношения к питбулям рабочих (боевых) линий.</motion.p>
+                    <p className={styles.text}>
+                    Здравствуйте дорогие друзья!
+                    </p>
+                    <p className={styles.text}>
+                    Меня зовут Гаджиева Наталья.
+                    </p>
+                    <p className={styles.text}>
+                    И я - профессиональный кинолог, грумер, первый заводчик собак породы прайтер.
+                    </p>
+                    <p className={styles.text}>
+                    Со мной можно обсудить породу доберман, расспросить о жизни с кавалер кинг чарльз спаниелями, а также узнать о реальных сложностях воспитания без вольерной жизни чаузи.
+                    </p>
+                    <p className={styles.text}>
+                    Вы всегда можете приехать к нам в гости и познакомиться с позитивными прайтерами, задать каверзные вопросы и получить ответы. Мы откровенно и щедро поделимся опытом общения с прайтерами.
+                    </p>
                 </div>
                 <div className={styles.box_image}>
                     <motion.img className={styles.image} src={image} alt='прайтеры' variants={imageAnimation}/>
