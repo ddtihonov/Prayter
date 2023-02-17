@@ -1,4 +1,5 @@
 import React, {useEffect } from 'react'
+import {Helmet} from "react-helmet"
 import { motion } from "framer-motion"
 import styles from './Contacts.module.scss'
 import image from '../../image/Contacts/image_9.png'
@@ -56,6 +57,11 @@ export const Contacts = () => {
             whileInView='visible'
             viewport={{amount: 0.4, once: true}} 
             >
+            <Helmet>
+                <title>Контакты Пит Прайт Москва</title>
+                <meta name="description" content="Контакты Пит Прайт Москва"></meta>
+                <link rel="canonical" href="https://praiter-moscow.ru/kontakty" />
+            </Helmet>      
             <BreadCrumbs
                 text={'Контакты'}
             />    

@@ -1,7 +1,8 @@
 import React, {useEffect } from 'react'
+import {Helmet} from "react-helmet"
 import { motion } from "framer-motion"
 import styles from './AboutUs.module.scss'
-import image from '../../image/AboutUs/image_2.jpg'
+import image from '../../image/AboutUs/image_3.jpg'
 import { BreadCrumbs } from '../../components/BreadCrumbs/BreadCrumbs'
 
 const titleAnimation = {
@@ -17,6 +18,7 @@ const titleAnimation = {
     }
 }
 
+
 const imageAnimation = {
     hidden: {
         y: 500,
@@ -30,7 +32,7 @@ const imageAnimation = {
     }
 }
 
-export const AboutUs = ({isOpen, popupOpen}) => {
+export const AboutUs = () => {
 
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -43,6 +45,11 @@ export const AboutUs = ({isOpen, popupOpen}) => {
             whileInView='visible'
             viewport={{amount: 0.4, once: true}} 
             >
+            <Helmet>
+                <title>Пит Прайт Москва</title>
+                <meta name="description" content="Пит Прайт Москва все о питомнике"></meta>
+                <link rel="canonical" href="https://praiter-moscow.ru/istoriya" />
+            </Helmet>     
             <BreadCrumbs
                 text={'О нас'}
             />     

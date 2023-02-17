@@ -9,7 +9,7 @@ export const Historia = ({isOpen}) => {
     return (
         <section className={styles.main} id='AboutUs'>
             <div className={styles.container}>
-                <h2 className={styles.title} >Почему<span> прайтер?</span></h2>
+                <h2 className={styles.title} >Почему<span> ПРАЙТЕР?</span></h2>
                 < div className={styles.box}>
                         <div className={styles.box_info}>
                             <img className={styles.image} src={image} alt='прайтер'/>

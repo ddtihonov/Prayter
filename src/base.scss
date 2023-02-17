@@ -14,7 +14,6 @@ $background-grey: #F5F5F5;
 $grey: #E3E3E3;
 
 
-
 @mixin main-column {
     box-sizing: border-box;
     background:  #E3E3E3;
@@ -120,14 +119,19 @@ $grey: #E3E3E3;
 }
 
 @mixin text {
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 22px;
+    line-height: 30px;
     font-weight: 400;
     margin: 20px 0;
     width: 100%;
     color: $title;
+
+    @media(max-width: 1240px){
+        font-size: 16px;
+        line-height: 26px;
+    }    
     
-    @media(max-width: 425px){
+    @media(max-width: 768px){
         font-size: 14px;
         line-height: 24px;
     }    
