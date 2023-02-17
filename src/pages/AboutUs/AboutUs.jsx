@@ -1,7 +1,7 @@
 import React, {useEffect } from 'react'
 import { motion } from "framer-motion"
 import styles from './AboutUs.module.scss'
-import image from '../../image/AboutUs/image_1.jpg'
+import image from '../../image/AboutUs/image_2.jpg'
 import { BreadCrumbs } from '../../components/BreadCrumbs/BreadCrumbs'
 
 const titleAnimation = {

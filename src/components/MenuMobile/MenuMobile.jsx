@@ -14,12 +14,14 @@ export const MenuMobile = ({onClose}) => {
             <nav className={styles.nav}>
                     <Link className={styles.menu_link} to='/' onClick={onClose}>Главная</Link>
                     <Link className={styles.menu_link} to='/istoriya' onClick={onClose}>О нас</Link>
-                    <Link className={styles.menu_link} to='/novosti'>Новости</Link>
                     <Link  className={styles.menu_link} to='/poroda'>О Породе</Link>
-                    <Link className={styles.menu_link} to='/foto' onClick={onClose}>Фото и видео</Link>
-                    <Link className={styles.menu_link} to='/zdorovie' onClick={onClose}>Здоровье</Link>
+                    <Link className={styles.menu_link} to='/foto' onClick={onClose}>Наши собаки</Link>
+                    <Link className={styles.menu_link} to='/novosti'>Новости</Link>
                     <Link className={styles.menu_link} to='/kontakty' onClick={onClose}>Контакты</Link>
             </nav>
         </div>
     );
 }
+
+
+//<Link className={styles.menu_link} to='/zdorovie' onClick={onClose}>Здоровье</Link>

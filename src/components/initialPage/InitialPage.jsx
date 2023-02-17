@@ -13,6 +13,11 @@ export const InitialPage = ({isOpen}) => {
                     <a className={styles.link} target='_blank' rel='noopener noreferrer' href='https://t.me/N_Gadzhieva' aria-label='телеграмм'>задать вопрос</a>
                 </div>
             </div>
+            <div className={styles.box_indicator}>
+                <a className={styles.indicator} href='#AboutUs'>
+                    <div className={styles.circle}></div>
+                </a>
+            </div> 
         </section>
     )
 }

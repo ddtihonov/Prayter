@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './Main.module.scss'
 import { InitialPage } from '../../components/initialPage/InitialPage'
 import { Historia } from '../../components/Historia/Historia'
+import { Portfolio } from '../../components/Portfolio/Portfolio'
 
 
 export const Main = ({isOpen, isImageOpen}) => {
@@ -13,6 +14,9 @@ export const Main = ({isOpen, isImageOpen}) => {
             />
             <Historia
                 isOpen={isOpen}
+            />
+            <Portfolio
+                isImageOpen={isImageOpen}
             />
         </section>
     )

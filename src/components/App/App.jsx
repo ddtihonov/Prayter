@@ -12,8 +12,8 @@ import { Breed } from '../../pages/Breed/Breed'
 import { MenuMobile } from '../MenuMobile/MenuMobile'
 import { ModalImage } from '../ModalImage/ModalImage'
 import { News } from '../../pages/News/News'
-import { Health } from '../../pages/Health/Health'
 import { arrBoy } from '../../utils/data'
+import {PageNotFound} from '../../pages/PageNotFound/PageNotFound'
 
 
 function App() {
@@ -48,8 +48,12 @@ function App() {
         isOpen={handleOpenMenuMobile}
       />
       <Routes> 
+        <Route path='*' element={
+            <PageNotFound/>
+        }/>
         <Route  path='/'  element={
           <Main
+            isImageOpen={handleImageOpen}
           />
         }/>
         <Route  path='/novosti'  element={
@@ -67,10 +71,6 @@ function App() {
         }/>
         <Route  path='/istoriya'  element={
           <AboutUs
-          />
-        }/>
-      <Route  path='/zdorovie'  element={
-          <Health
           />
         }/>
         <Route  path='/foto'  element={
@@ -96,3 +96,9 @@ function App() {
 }
 
 export default App;
+
+
+/*<Route  path='/zdorovie'  element={
+  <Health
+  />
+}/>*/

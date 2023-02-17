@@ -3,7 +3,6 @@ import styles from './Dogs.module.scss'
 import { BreadCrumbs } from '../../components/BreadCrumbs/BreadCrumbs'
 import { Portfolio } from '../../components/Portfolio/Portfolio'
 import { Children } from '../../components/Children/Children'
-import { VideoClip } from '../../components/VideoClip/VideoClip'
 
 export const Dogs = ({isImageOpen}) => {
 
@@ -14,7 +13,7 @@ export const Dogs = ({isImageOpen}) => {
     return (
         <section className={styles.main}>
             <BreadCrumbs
-                text={'Фото и видео'}
+                text={'Наши собаки'}
             />  
             <Portfolio
                 isImageOpen={isImageOpen}
@@ -22,7 +21,6 @@ export const Dogs = ({isImageOpen}) => {
             <Children
                 isImageOpen={isImageOpen}
             /> 
-            <VideoClip/>   
         </section>
     )
 }

@@ -1,5 +1,18 @@
 @import '../../base.scss';
 
+
+@keyframes arrow-down {
+    0%{
+        transform: rotate(45deg) translate(0, 0);
+    }
+    50%{
+        transform: rotate(45deg) translate(15px, 15px);
+    }
+    100%{
+        transform: rotate(45deg) translate(0, 0);
+    }
+}
+
     .main {
         width: 100vw;
         height: 100vh;
@@ -96,6 +109,36 @@
         transition: all .5s ease-out;
     text-decoration: none;
     }
+}
+
+.box_indicator{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 15px;
+}
+
+.indicator{
+    width: 20px;
+    height: 37px;
+    border: 1px solid $grey;
+    border-radius: 20px;
+    margin: auto 0 20px;
+    display: flex;
+    justify-content: center;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.circle{
+    margin-top: 3px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: $white;
+    animation: arrow-down 2s infinite;
 }
 
 

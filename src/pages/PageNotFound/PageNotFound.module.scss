@@ -1,0 +1,91 @@
+@import '../../base.scss';
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-color: $dark-grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5000;
+    padding: 20px;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    font-size: 140px;
+    line-height: 1.25;
+    font-weight: 700;
+    margin: 20px auto;
+    color: $red;
+}
+
+.subtitle{
+    width: 100%;
+    font-size: 40px;
+    line-height: 1.25;
+    font-weight: 700;
+    margin: 20px 0 0;
+    text-align: center;
+    color: $white;
+}
+
+.text{
+    font-size: 16px;
+    line-height: 26px;
+    width: 100%;
+    margin: 5px auto 100px;
+    color: $white;
+    text-align: center;
+    font-weight: 500
+}
+
+.link{
+    font-size: 16px;
+    line-height: 26px;
+    width: 100%;
+    text-decoration: none;
+    color: $red;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 500;
+
+
+    &:hover{
+        cursor: pointer;
+        opacity: 0.7;
+        transition: all .5s ease-out;
+    } 
+}
+
+@media (max-width: 768px){
+    .subtitle{
+        max-width: 400px;
+    }
+
+    .main{
+        padding: 10px;
+    }
+
+}
+
+@media (max-width: 425px){
+
+    .subtitle{
+        max-width: 300px;
+    }
+
+    .title{
+        font-size: 80px;
+    }
+}

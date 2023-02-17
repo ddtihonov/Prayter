@@ -7,7 +7,7 @@ import image_2 from '../../image/Historia/image_6.jpg'
 
 export const Historia = ({isOpen}) => {
     return (
-        <section className={styles.main}>
+        <section className={styles.main} id='AboutUs'>
             <div className={styles.container}>
                 <h2 className={styles.title} >Почему<span> прайтер?</span></h2>
                 < div className={styles.box}>
