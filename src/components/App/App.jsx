@@ -67,6 +67,7 @@ function App() {
         }/>
         <Route  path='/poroda'  element={
           <Breed
+            isImageOpen={handleImageOpen}
           />
         }/>
         <Route  path='/istoriya'  element={

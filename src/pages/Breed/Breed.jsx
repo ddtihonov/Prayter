@@ -4,7 +4,7 @@ import styles from './Breed.module.scss'
 import { BreadCrumbs } from '../../components/BreadCrumbs/BreadCrumbs'
 import { Reference } from '../../components/Reference/Reference'
 
-export const Breed = () => {
+export const Breed = ({isImageOpen}) => {
 
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -20,7 +20,9 @@ export const Breed = () => {
             <BreadCrumbs
                 text={'О породе'}
             />
-            <Reference/>
+            <Reference
+                isImageOpen={isImageOpen}
+            />
             <div className={styles.container}>
                 <h1 className={styles.title} >Стандарт породы <span>прайтер</span></h1>
                 <h4 className={styles.subtitle_red}>Характер</h4>

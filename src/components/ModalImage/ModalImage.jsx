@@ -35,7 +35,7 @@ export const ModalImage = ({onClose, index, arr}) => {
                 return(
                     <div className={`${index === activeIndex ? modal.modal : modal.modal_active}`} onClick={evt => evt.stopPropagation()} key={keyUid}>
                     <button data-test="close-button" className={modal.close_icon} type="button" aria-label="закрыть" onClick={onClose}/>
-                    <img className={modal.image} src={arr[activeIndex].image} alt='прайтер'/>
+                    <img className={modal.image} src={arr[activeIndex].image} alt={arr[index].title}/>
                     <button className={modal.button_left} type="button" onClick={() => updateIndex(activeIndex - 1)}/>
                     <button className={modal.button_right} type="button" onClick={() => updateIndex(activeIndex + 1)}/>
                     <div className={modal.box}>

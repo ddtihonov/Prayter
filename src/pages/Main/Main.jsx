@@ -4,6 +4,7 @@ import styles from './Main.module.scss'
 import { InitialPage } from '../../components/initialPage/InitialPage'
 import { Historia } from '../../components/Historia/Historia'
 import { Portfolio } from '../../components/Portfolio/Portfolio'
+import { Children } from '../../components/Children/Children'
 
 
 export const Main = ({isOpen, isImageOpen}) => {
@@ -24,6 +25,7 @@ export const Main = ({isOpen, isImageOpen}) => {
             <Portfolio
                 isImageOpen={isImageOpen}
             />
+            <Children/>
         </section>
     )
 }

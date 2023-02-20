@@ -10,7 +10,7 @@ export const CardImage = ({item, isImageOpen, index, arrPortfolio}) => {
 
     return (
         <li className={styles.item}  onClick={cardClick}>
-            <img className={styles.image} src={item.image} alt='прическа'/>
+            <img className={styles.image} src={item.image} alt={item.title}/>
         </li>
     )
 }
